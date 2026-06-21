@@ -66,10 +66,11 @@ A comprehensive React.js dashboard application for user analytics and management
 4. **Open your browser**
    Navigate to `http://localhost:3000`
 
+
 ## 🚀 Deployment
 
 GitHub Pages
-bash
+
 # Install gh-pages
 npm install --save-dev gh-pages
 
@@ -81,17 +82,10 @@ npm install --save-dev gh-pages
 # Deploy
 npm run build
 npm run deploy
-   ```
 
-### Netlify
-1. Build the project:
-   ```bash
-   npm run build
-   ```
-
-2. Deploy the `build` folder to Netlify
 
 ### Vercel
+
 # Install Vercel CLI
 npm install -g vercel
 
