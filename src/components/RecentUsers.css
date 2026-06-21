@@ -1,0 +1,133 @@
+.recent-users-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recent-user-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.recent-user-item:hover {
+  background-color: #f1f5f9;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-rank {
+  font-weight: 700;
+  color: #3b82f6;
+  font-size: 14px;
+  min-width: 24px;
+}
+
+.user-avatar-container {
+  position: relative;
+}
+
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e2e8f0;
+}
+
+.user-avatar-placeholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 18px;
+  border: 2px solid #e2e8f0;
+}
+
+.user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-email {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user-date {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.user-arrow {
+  color: #cbd5e1;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.recent-user-item:hover .user-arrow {
+  color: #3b82f6;
+}
+
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #64748b;
+}
+
+.no-data p {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .recent-user-item {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .user-avatar,
+  .user-avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .user-email {
+    font-size: 13px;
+  }
+
+  .user-date {
+    font-size: 11px;
+  }
+}
