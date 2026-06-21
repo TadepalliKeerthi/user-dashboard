@@ -67,10 +67,13 @@ A comprehensive React.js dashboard application for user analytics and management
    Navigate to `http://localhost:3000`
 
 
-## 🚀 Deployment
+## 🚀 Deployment Options
 
-GitHub Pages
+You can deploy this project on any of these platforms:
 
+### GitHub Pages
+
+```bash
 # Install gh-pages
 npm install --save-dev gh-pages
 
@@ -82,16 +85,23 @@ npm install --save-dev gh-pages
 # Deploy
 npm run build
 npm run deploy
+```
 
+### Netlify
+
+```bash
+# Build the project
+npm run build
+
+# Drag and drop 'build' folder to Netlify
+```
 
 ### Vercel
 
-# Install Vercel CLI
-npm install -g vercel
-
-# Deploy
-vercel
-
+```bash
+# Connect GitHub repository to Vercel
+# Vercel will auto-deploy on every push to main branch
+```
 ## 📁 Project Structure
 
 ```
